@@ -1,4 +1,4 @@
-NYC Airbnb Exploratory Data Analysis (EDA)
+#NYC Airbnb Exploratory Data Analysis (EDA)
 📋 Project Overview
 This project performs a comprehensive exploratory data analysis on New York City Airbnb listings to uncover patterns, trends, and insights about the rental market. The analysis covers data cleaning, statistical summaries, visualizations, and actionable insights for both hosts and travelers.
 
@@ -22,7 +22,7 @@ Time Period: Current active listings in NYC
 
 Key Features: ID, Name, Neighbourhood, Room Type, Price, Reviews, Availability, etc.
 
-```📁 Project Structure
+📁 Project Structure
 text
 NYC-Airbnb-EDA/
 ├── data/
@@ -38,7 +38,7 @@ NYC-Airbnb-EDA/
 │   ├── room_type_comparison.png
 │   └── correlation_heatmap.png
 ├── README.md
-└── requirements.txt```
+└── requirements.txt
 🛠️ Technologies Used
 Python 3.8+
 
