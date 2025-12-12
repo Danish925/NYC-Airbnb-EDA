@@ -22,7 +22,7 @@ Comprehensive analysis of **49,000+ NYC Airbnb listings** uncovering pricing tre
 | **Features** | 16 columns |
 | **Time** | 2019 NYC listings |
 
-## 📁 Project Structure
+```## 📁 Project Structure
 
 NYC-Airbnb-EDA/
 ├── README.md # 📄 This file
@@ -37,7 +37,7 @@ NYC-Airbnb-EDA/
 ├── 02_price_distribution.png
 ├── 03_room_neighbourhood.png
 ├── 04_correlation_heatmap.png
-└── 05_reviews_availability.png
+└── 05_reviews_availability.png```
 
 
 ## 🛠️ Tech Stack
