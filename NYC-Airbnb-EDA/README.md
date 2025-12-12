@@ -1,237 +1,122 @@
-NYC Airbnb Exploratory Data Analysis (EDA)
-📋 Project Overview
-This project performs a comprehensive exploratory data analysis on New York City Airbnb listings to uncover patterns, trends, and insights about the rental market. The analysis covers data cleaning, statistical summaries, visualizations, and actionable insights for both hosts and travelers.
+# NYC Airbnb Exploratory Data Analysis (EDA)
 
-🎯 Objectives
-Data Cleaning: Handle missing values, duplicates, and outliers
+## 📋 Project Overview
 
-Descriptive Analysis: Understand dataset structure and key statistics
+Comprehensive analysis of **49,000+ NYC Airbnb listings** uncovering pricing trends, neighborhood preferences, room type distributions, and market insights.
 
-Trend Analysis: Identify pricing patterns, neighborhood preferences, and room type distributions
+## 🎯 Objectives
 
-Visualization: Create compelling charts for market insights
+- 🔧 Data cleaning & preprocessing
+- 📊 Descriptive statistics & distributions
+- 🗺️ Neighborhood & room type analysis
+- 📈 Price trend identification
+- 🎨 Publication-quality visualizations
+- 💡 Actionable business insights
 
-Business Insights: Generate actionable recommendations
+## 📊 Dataset
 
-📊 Dataset Information
-Source: NYC Airbnb dataset (Kaggle or official source)
+| Info | Details |
+|------|---------|
+| **Source** | [Kaggle NYC Airbnb](https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data) |
+| **Size** | ~49,895 listings |
+| **Features** | 16 columns |
+| **Time** | 2019 NYC listings |
 
-Size: ~7,000+ listings
+## 📁 Project Structure
 
-Time Period: Current active listings in NYC
-
-Key Features: ID, Name, Neighbourhood, Room Type, Price, Reviews, Availability, etc.
-
-📁 Project Structure
-text
 NYC-Airbnb-EDA/
+├── README.md # 📄 This file
+├── requirements.txt # 📦 Dependencies
 ├── data/
-│   ├── raw/
-│   │   └── AB_NYC_2019.csv
-│   └── cleaned/
-│       └── airbnb_cleaned.csv
+│ ├── raw/AB_NYC_2019.csv # 📥 Original dataset
+│ └── cleaned/
 ├── notebooks/
-│   └── EDA_NYC_Airbnb.ipynb
-├── visualizations/
-│   ├── price_distribution.png
-│   ├── neighborhood_analysis.png
-│   ├── room_type_comparison.png
-│   └── correlation_heatmap.png
-├── README.md
-└── requirements.txt
-🛠️ Technologies Used
-Python 3.8+
+│ └── EDA_NYC_Airbnb.ipynb # 📓 Analysis notebook
+└── visualizations/ # 📊
+├── 01_missing_values.png
+├── 02_price_distribution.png
+├── 03_room_neighbourhood.png
+├── 04_correlation_heatmap.png
+└── 05_reviews_availability.png
 
-Pandas: Data manipulation and analysis
 
-NumPy: Numerical computing
+## 🛠️ Tech Stack
 
-Matplotlib: Static visualizations
+| Package | Purpose | Version |
+|---------|---------|---------|
+| `pandas` | Data analysis | 2.1.4 |
+| `numpy` | Math operations | 1.24.3 |
+| `matplotlib` | Plotting | 3.8.2 |
+| `seaborn` | Stats viz | 0.13.2 |
+| `jupyter` | Notebook | 1.0.0 |
 
-Seaborn: Statistical data visualization
+## 🚀 Quick Start
 
-Plotly: Interactive visualizations (optional)
-
-Jupyter Notebook: Interactive development environment
-
-📈 Key Analysis Sections
-1. Data Cleaning & Preprocessing
-Load and inspect dataset
-
-Handle missing values
-
-Remove duplicates
-
-Identify and handle outliers
-
-Data type conversions
-
-2. Descriptive Statistics
-Shape and basic info
-
-Statistical summaries (mean, median, std, etc.)
-
-Unique values and distributions
-
-Top and bottom listings by metrics
-
-3. Neighborhood Analysis
-Distribution of listings across neighborhoods
-
-Average price by neighborhood
-
-Availability trends
-
-Room type preferences by area
-
-4. Room Type & Price Analysis
-Price distribution by room type
-
-Average ratings and reviews by room type
-
-Occupancy patterns
-
-Price vs. ratings correlation
-
-5. Temporal & Availability Analysis
-Review frequency and patterns
-
-Availability distribution
-
-Minimum stay requirements
-
-Booking patterns
-
-6. Advanced Insights
-Correlation analysis
-
-Outlier investigation
-
-Multi-variable relationships
-
-Actionable recommendations
-
-📊 Expected Visualizations
-Histograms: Price, reviews, availability distributions
-
-Box plots: Price by neighborhood and room type
-
-Bar charts: Room type counts, top neighborhoods
-
-Scatter plots: Price vs. reviews, price vs. availability
-
-Heatmaps: Correlation matrix, neighborhood heatmaps
-
-Pie charts: Market share by room type
-
-Line plots: Trend analysis (if time-based data)
-
-Geographic: NYC map with listings (if coordinates available)
-
-🚀 Getting Started
-Clone the repository
-
-bash
-git clone <repository-url>
+```bash
+git clone <your-repo-url>
 cd NYC-Airbnb-EDA
-Install dependencies
-
-bash
 pip install -r requirements.txt
-Download dataset
 
-Download from Kaggle: NYC Airbnb Dataset
+# Download dataset from:
+# https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data
+# Place in: data/raw/AB_NYC_2019.csv
 
-Place in data/raw/ folder
+jupyter notebook notebooks/EDA_NYC_Airbnb.ipynb
+📈 Key Findings
 
-Run the analysis
+1️⃣ MARKET: 49K+ listings, 37K+ hosts
+2️⃣ PRICE: $152 avg ($106 median)
+3️⃣ ROOMS: Entire homes 52%, Private 45%
+4️⃣ LOCATION: Brooklyn 43%, Manhattan 19%
+5️⃣ INSIGHTS: Weak price-review correlation
+📊 Visualizations (5 Charts)
+Missing Values Analysis
 
-Open notebooks/EDA_NYC_Airbnb.ipynb
+Price Distributions (histograms + box plots)
 
-Execute cells sequentially
+Neighborhood & Room Type (bar charts)
 
-Save visualizations to visualizations/ folder
+Correlation Heatmap
 
-💡 Key Findings (Expected)
-Price Leaders: Manhattan and Brooklyn command premium prices
-
-Market Distribution: Entire homes dominate the market
-
-Quality Insights: No strong correlation between price and ratings
-
-Availability: Highly variable across neighborhoods
-
-Review Velocity: Popular listings receive reviews faster
-
-📚 Learning Outcomes
-By completing this project, you will:
-
-Master pandas for real-world data analysis
-
-Create publication-quality visualizations
-
-Develop hypothesis-driven analysis skills
-
-Build portfolio-ready project documentation
-
-Practice professional data storytelling
+Reviews & Availability (scatter plots)
 
 🎓 Skills Demonstrated
-✅ Data cleaning and preprocessing
+text
+✅ Data cleaning (missing, outliers, duplicates)
+✅ EDA workflow (16 modular cells)
+✅ Statistical analysis & correlations
+✅ Publication-quality visualizations
+✅ Professional GitHub workflows
+✅ Data storytelling
+💾 Outputs Generated
+text
+✅ airbnb_cleaned.csv
+✅ 5 PNG visualizations (300 DPI)
+✅ summary_statistics.csv
+✅ Key findings report
+📈 Business Insights
+For Hosts:
 
-✅ Exploratory data analysis (EDA)
+Target Manhattan/Brooklyn
 
-✅ Statistical analysis
+Entire homes = 2x pricing power
 
-✅ Data visualization
+Availability > high prices
 
-✅ Problem-solving and critical thinking
+For Travelers:
 
-✅ Documentation and communication
+Queens = 50% price savings
 
-✅ Git/GitHub version control
+Reviews ≠ price quality
 
-✅ Jupyter notebook proficiency
-
-📝 How to Use This Repository
-Follow the step-by-step checklist in the project guide
-
-Complete each day's objectives
-
-Commit changes to GitHub daily
-
-Document insights and findings
-
-Create a professional README for LinkedIn
-
-🔗 Repository Information
-GitHub: [Your NYC-Airbnb-EDA Repository]
-
-Last Updated: December 2025
-
-Status: In Progress / Complete
-
-License: MIT
-
+🎯 3-Day Timeline
+Day	Focus	Deliverables
+1	Data Cleaning	Clean dataset, Cell 1-4
+2	EDA & Analysis	Statistics, Cell 5-9
+3	Visuals & Docs	5 charts, README, GitHub
 👤 Author
-[Your Name]
-
-Portfolio: [Your Portfolio Link]
-
-LinkedIn: [Your LinkedIn Profile]
-
-GitHub: [Your GitHub Profile]
-
-📞 Support & Resources
-Dataset Source: Kaggle NYC Airbnb Dataset
-
-Official Docs:
-
-Pandas Documentation
-
-Matplotlib Documentation
-
-Seaborn Documentation
+Your Name
+[Portfolio] | [LinkedIn] | [GitHub]
 
 📜 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+MIT License
