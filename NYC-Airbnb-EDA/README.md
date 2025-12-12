@@ -37,7 +37,7 @@ NYC-Airbnb-EDA/
 ├── 02_price_distribution.png
 ├── 03_room_neighbourhood.png
 ├── 04_correlation_heatmap.png
-└── 05_reviews_availability.png```
+└── 05_reviews_availability.png
 
 
 ## 🛠️ Tech Stack
@@ -49,17 +49,6 @@ NYC-Airbnb-EDA/
 | `matplotlib` | Plotting | 3.8.2 |
 | `seaborn` | Stats viz | 0.13.2 |
 | `jupyter` | Notebook | 1.0.0 |
-
-## 🚀 Quick Start
-
-```bash
-git clone <your-repo-url>
-cd NYC-Airbnb-EDA
-pip install -r requirements.txt
-
-# Download dataset from:
-# https://www.kaggle.com/datasets/dgomonov/new-york-city-airbnb-open-data
-# Place in: data/raw/AB_NYC_2019.csv
 
 jupyter notebook notebooks/EDA_NYC_Airbnb.ipynb
 📈 Key Findings
@@ -109,14 +98,11 @@ Queens = 50% price savings
 
 Reviews ≠ price quality
 
-🎯 3-Day Timeline
-Day	Focus	Deliverables
+🎯 
 1	Data Cleaning	Clean dataset, Cell 1-4
 2	EDA & Analysis	Statistics, Cell 5-9
 3	Visuals & Docs	5 charts, README, GitHub
-👤 Author
-Your Name
-[Portfolio] | [LinkedIn] | [GitHub]
+
 
 📜 License
 MIT License
